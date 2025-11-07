@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, FileText } from "lucide-react";
+import { Github, Linkedin, Mail, User } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -8,6 +8,14 @@ const Hero = () => {
       
       <div className="container max-w-5xl mx-auto relative z-10 animate-fade-in">
         <div className="text-center space-y-6">
+          {/* Profile Photo Placeholder */}
+          <div className="flex justify-center mb-8">
+            <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+              <User className="w-20 h-20 md:w-24 md:h-24 text-primary/40" />
+              {/* Replace the div above with: <img src="/path-to-your-photo.jpg" alt="Purushothaman M" className="w-full h-full object-cover" /> */}
+            </div>
+          </div>
+          
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
             Hi, I'm <span className="gradient-text">Purushothaman M</span>
           </h1>
