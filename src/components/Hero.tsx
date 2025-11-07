@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
 
 const Hero = () => {
+
+  const navigate = useNavigate();
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-4">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-card/50" />
@@ -25,7 +29,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow transition-all duration-300"
-              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => navigate('/projects')}
             >
               View My Work
             </Button>
@@ -33,7 +37,7 @@ const Hero = () => {
               size="lg" 
               variant="outline"
               className="border-primary/50 hover:bg-primary/10"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => navigate('/contact')}
             >
               Get In Touch
             </Button>
@@ -63,12 +67,6 @@ const Hero = () => {
               <Mail className="w-6 h-6" />
             </a>
           </div>
-        </div>
-      </div>
-      
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex items-start justify-center p-2">
-          <div className="w-1.5 h-3 bg-primary rounded-full" />
         </div>
       </div>
     </section>
