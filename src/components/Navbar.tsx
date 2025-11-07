@@ -7,8 +7,11 @@ const Navbar = () => {
 
   const navLinks = [
     { to: "/", label: "Home" },
-    { to: "/projects", label: "Projects" },
+    { to: "/about", label: "About Me" },
+    { to: "/experience", label: "Experience & Education" },
+    { to: "/certificates", label: "Certificates" },
     { to: "/skills", label: "Skills" },
+    { to: "/projects", label: "Projects" },
     { to: "/contact", label: "Contact" },
   ];
 
